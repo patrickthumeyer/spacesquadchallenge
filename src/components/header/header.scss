@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.header {
+  background-color: $blue300;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 20px;
+  &__text {
+    color: $blue100;
+    margin: 5px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .header {
+    &__text {
+      text-align: left;
+    }
+  }
+}

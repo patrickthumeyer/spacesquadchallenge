@@ -1,1 +1,36 @@
+@import "./styles/_variables";
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats {
+  background-color: $blue100;
+  width: 100%;
+  min-height: 50px;
+}
+
+.news {
+  background-color: $blue200;
+  width: 100%;
+  min-height: 50px;
+}
+
+@media (min-width: 600px) {
+  .App {
+    flex-direction: row;
+    position: fixed;
+  }
+
+  .stats {
+    width: 70%;
+    height: 100vh;
+  }
+
+  .news {
+    width: 30%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
