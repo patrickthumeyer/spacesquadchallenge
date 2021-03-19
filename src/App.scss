@@ -1,31 +1,65 @@
 @import "./styles/_variables";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 .App {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
 }
 
 .stats {
   background-color: $blue100;
   width: 100%;
-  min-height: 50px;
+  // min-height: 50px;
+  padding: 20px;
+  &__firstWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  &__secondWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .news {
   background-color: $blue200;
   width: 100%;
   min-height: 50px;
+  padding: 20px;
 }
 
 @media (min-width: 600px) {
   .App {
     flex-direction: row;
-    position: fixed;
   }
 
   .stats {
     width: 70%;
-    height: 100vh;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+    &__firstWrapper {
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &__secondWrapper {
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
   }
 
   .news {

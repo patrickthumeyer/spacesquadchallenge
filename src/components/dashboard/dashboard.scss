@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.dashboard {
+  background-color: $blue300;
+  border-radius: 10px;
+  max-height: 350px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .dashboard {
+    width: 75%;
+    // min-height: 350px;
+  }
+}
