@@ -1,10 +1,10 @@
 @import "../../styles/variables";
 
 .newsCard {
-  background-color: $blue50;
+  background-color: $blue100;
   border-radius: 10px;
   color: $blue600;
-  margin-bottom: 20px;
+  margin-top: 20px;
 
   &__image {
     max-width: 100%;

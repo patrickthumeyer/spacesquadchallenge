@@ -4,8 +4,8 @@ import "./numberCard.scss";
 const NumberCard = ({ amount, headline }) => {
   return (
     <div className="numberCard">
-      <h4>{headline}</h4>
-      <span>{amount}</span>
+      <h4 className="numberCard__title">{headline}</h4>
+      <span className="numberCard__amount">{amount.toLocaleString()}</span>
     </div>
   );
 };

@@ -15,18 +15,17 @@
 .stats {
   background-color: $blue100;
   width: 100%;
-  // min-height: 50px;
   padding: 20px;
-  &__firstWrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  &__secondWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 20px;
+}
+
+.stats {
+  background-color: $blue100;
+  width: 100%;
+  padding: 20px;
 }
 
 .news {
@@ -38,27 +37,29 @@
 
 @media (min-width: 600px) {
   .App {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 900px) {
+  .App {
     flex-direction: row;
   }
 
   .stats {
     width: 70%;
-    // height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     overflow-y: scroll;
+    grid-auto-rows: 50px 350px 100px;
+    grid-template-columns: repeat(4, 1fr);
 
     &__firstWrapper {
-      flex-direction: row;
       width: 100%;
+      grid-column: 1fr 1fr 1fr 1fr;
     }
 
     &__secondWrapper {
-      display: flex;
       width: 100%;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
+      grid-column: 1fr 1fr 1fr 1fr;
     }
   }
 

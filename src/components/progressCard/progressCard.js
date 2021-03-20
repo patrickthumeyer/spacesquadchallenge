@@ -14,15 +14,18 @@ const ProgressCard = () => {
   return (
     <div className="progressCard">
       <CircularProgressbar
+        className="progressCard__circle"
         value={percentage}
         text={`${percentage}%`}
-        // styles={buildStyles({
-        //   trailColor: "#d6d6d6",
-        // })}
+        styles={buildStyles({
+          trailColor: "rgb(28, 28, 112)",
+          pathColor: "#430000",
+          textColor: "rgb(0, 0, 70)",
+        })}
       />
-      <h1 className="progressCard__text">
+      <h3 className="progressCard__text">
         of the german population is vaccinated
-      </h1>
+      </h3>
     </div>
   );
 };

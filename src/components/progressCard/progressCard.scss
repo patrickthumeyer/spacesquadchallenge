@@ -3,25 +3,32 @@
 .progressCard {
   background-color: $blue300;
   border-radius: 10px;
-  max-height: 250px;
   padding: 20px;
+  grid-column: span 2;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: center;
+
+  &__circle {
+    height: 70%;
+  }
 
   &__text {
     text-align: center;
-    color: white;
+    color: $blue50;
     font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .progressCard {
-    width: 24%;
-    margin-right: 20px;
     margin-bottom: 0;
-    max-height: 350px;
+    grid-column: span 1;
+    &__circle {
+      height: 50%;
+    }
   }
 }

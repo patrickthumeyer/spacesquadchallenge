@@ -3,25 +3,27 @@
 .numberCard {
   background-color: $blue300;
   border-radius: 10px;
-  width: 46%;
   max-height: 150px;
   padding: 10px;
   height: 100px;
+  grid-column: span 1;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-  &:nth-child(-n + 2) {
-    margin-bottom: 20px;
+  justify-content: space-between;
+
+  //   &__title {
+  //   }
+
+  &__amount {
+    font-size: 26px;
+    font-weight: 600;
+    align-self: flex-end;
+    color: $darkRed;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .numberCard {
-    width: 25%;
-    &:nth-child(n + 2) {
-      margin-left: 20px;
-      margin-bottom: 0;
-    }
+    grid-column: span 1;
   }
 }

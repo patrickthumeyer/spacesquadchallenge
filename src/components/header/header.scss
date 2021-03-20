@@ -5,10 +5,11 @@
   border-radius: 10px;
   padding: 10px 20px;
   width: 100%;
-  max-height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  grid-column: span 2;
+
   &__text {
     color: $blue100;
     margin: 5px;
@@ -16,8 +17,10 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .header {
+    grid-column: span 4;
+    height: 50px;
     &__text {
       text-align: left;
     }
