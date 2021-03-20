@@ -12,20 +12,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.stats {
+.dashboardWrapper {
+  width: 100%;
   background-color: $blue100;
+}
+
+.stats {
   width: 100%;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(50px, auto);
   grid-gap: 20px;
-}
-
-.stats {
-  background-color: $blue100;
-  width: 100%;
-  padding: 20px;
 }
 
 .news {
@@ -41,14 +39,18 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .App {
     flex-direction: row;
   }
 
-  .stats {
-    width: 70%;
+  .dashboardWrapper {
     overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .stats {
+    width: 100%;
     grid-auto-rows: 50px 350px 100px;
     grid-template-columns: repeat(4, 1fr);
 

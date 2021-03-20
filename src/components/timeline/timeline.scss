@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.timeline {
+  padding: 20px;
+  &__headline {
+    color: $blue300;
+    text-align: left;
+    &__date {
+      color: $blue300;
+      text-align: center;
+      font-size: 18px;
+      border: 2px solid red;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .timeline {
+    &__headline {
+      text-align: left;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .timeline {
+    &__headline {
+      text-align: center;
+    }
+  }
+}
