@@ -1,15 +1,13 @@
 @import "../../styles/variables";
 
 .timeline {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   &__headline {
-    color: $blue300;
+    color: $blue600;
     text-align: left;
     &__date {
-      color: $blue300;
-      text-align: center;
+      color: $blue600;
       font-size: 18px;
-      border: 2px solid red;
     }
   }
 }

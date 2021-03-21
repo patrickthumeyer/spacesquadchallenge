@@ -5,7 +5,7 @@ import Chart from "react-apexcharts";
 const Dashboard = () => {
   const [options, setOptions] = useState({
     chart: {
-      background: "rgb(60, 60, 161)",
+      background: "rgb(71, 71, 170)",
       foreColor: "#333",
       toolbar: { show: false },
     },
@@ -27,14 +27,14 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h1 className="dashboard__totalNumber">
-        {totalVaccinations.toLocaleString()} vaccinations in total
+        {totalVaccinations.toLocaleString()} vaccinations
       </h1>
       <div className="dashboard__graph">
         <Chart
           options={options}
           series={series}
           type="bar"
-          height="260"
+          height="250"
           width="100%"
         />
       </div>

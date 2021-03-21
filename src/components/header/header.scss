@@ -5,22 +5,32 @@
   border-radius: 10px;
   padding: 10px 20px;
   width: 100%;
-  min-height: 50px;
+  max-height: 100px;
   display: flex;
   align-items: center;
   grid-column: span 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 
   &__text {
     color: $blue100;
     margin: 5px;
     text-align: center;
   }
+
+  &__image {
+    & svg {
+      width: 90px;
+      margin-right: -45px;
+    }
+  }
 }
 
 @media (min-width: 800px) {
   .header {
     grid-column: span 4;
-    height: 50px;
+    max-height: 50px;
     &__text {
       text-align: left;
     }
