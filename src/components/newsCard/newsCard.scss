@@ -5,10 +5,12 @@
   border-radius: 10px;
   color: $blue600;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
   &__image {
-    max-width: 100%;
-    object-fit: contain;
+    max-height: 300px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -17,16 +19,41 @@
     padding: 20px;
 
     &__headline {
-      margin: 0;
+      margin: 0 0 10px;
     }
 
     &__text {
       line-height: 18px;
+      margin: 0 0 10px;
     }
 
     &__date {
       font-size: 10px;
       color: lightgrey;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .newsCard {
+    flex-direction: row;
+    &__image {
+      max-width: 250px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .newsCard {
+    flex-direction: column;
+    &__image {
+      min-width: 100%;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
     }
   }
 }

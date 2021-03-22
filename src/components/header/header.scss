@@ -9,21 +9,33 @@
   display: flex;
   align-items: center;
   grid-column: span 2;
-  overflow: hidden;
-  display: flex;
   justify-content: space-between;
 
   &__text {
     color: $blue100;
-    margin: 5px;
     text-align: center;
   }
+}
+
+div.Dropdown-control {
+  background-color: $blue200;
+  border-radius: 10px;
+  border: 2px solid $blue200;
+  color: white;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+div.Dropdown-menu {
+  background-color: $blue600;
+  border: none;
+  border-radius: 10px;
 }
 
 @media (min-width: 800px) {
   .header {
     grid-column: span 4;
-    max-height: 50px;
+    height: 60px;
     &__text {
       text-align: left;
     }

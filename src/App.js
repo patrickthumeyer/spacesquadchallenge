@@ -6,6 +6,7 @@ import ProgressCard from "./components/progressCard/progressCard";
 import Dashboard from "./components/dashboard/dashboard";
 import NumberCard from "./components/numberCard/numberCard";
 import Timeline from "./components/timeline/timeline";
+import NewsHeader from "./components/newsHeader/newsHeader";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Timeline className="__timeline" />
       </div>
       <div className="news">
-        <Header headline="News" />
+        <NewsHeader headline="News" />
         <NewsCard />
         <NewsCard />
         <NewsCard />

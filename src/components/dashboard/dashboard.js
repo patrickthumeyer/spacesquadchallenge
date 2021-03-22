@@ -20,7 +20,7 @@ const Dashboard = () => {
     dataLabels: { enabled: false },
   });
   const [series, setSeries] = useState([
-    { name: "Vaccinations", data: [134.565, 183.445, 222.355, 234.565] },
+    { name: "Vaccinations", data: [54.565, 183.445, 222.355, 234.565] },
   ]);
 
   const totalVaccinations = 27880432;
