@@ -6,9 +6,31 @@
   max-height: 380px;
   width: 100%;
   grid-column: span 2;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    display: block;
+    content: url("../../assets/svgs/corona.svg");
+    // background-image: url("../../assets/svgs/corona.svg");
+    // transform: rotate(270deg);
+    // background-image: url("../../assets/images/corona-virus.jpg");
+    top: -60px;
+    right: -30px;
+    position: absolute;
+    z-index: 100;
+  }
 
   &__totalNumber {
     margin-left: 20px;
+    // position: absolute;
+    z-index: 200;
+  }
+}
+
+@media (max-width: 580px) {
+  .dashboard__totalNumber {
+    width: 200px;
   }
 }
 

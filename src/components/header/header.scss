@@ -18,13 +18,6 @@
     margin: 5px;
     text-align: center;
   }
-
-  &__image {
-    & svg {
-      width: 80px;
-      margin-right: -45px;
-    }
-  }
 }
 
 @media (min-width: 800px) {
