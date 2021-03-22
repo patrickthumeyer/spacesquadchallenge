@@ -3,14 +3,23 @@ import "./header.scss";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 
-const options = ["Germany", "DACH", "Global", "USA"];
+const options = [
+  { value: "german", label: "Germany" },
+  { value: "DACH", label: "DACH" },
+  { value: "global", label: "Global" },
+  { value: "american", label: "USA" },
+];
 const defaultOption = options[0];
 
-const Header = ({ headline }) => {
+const Header = ({ headline, setCountry }) => {
   return (
     <div className="header">
       <h1 className="header__text">{headline}</h1>
-      <Dropdown options={options} value={defaultOption} />
+      <Dropdown
+        options={options}
+        value={defaultOption}
+        onChange={({ value }) => setCountry(value)}
+      />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 const Dashboard = () => {
   const [options, setOptions] = useState({
     chart: {
-      background: "rgb(71, 71, 170)",
+      background: "rgb(80, 80, 172",
       foreColor: "#333",
       toolbar: { show: false },
     },

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./App.scss";
 import "./normalize.scss";
 import Header from "./components/header/header";
@@ -8,13 +10,15 @@ import NumberCard from "./components/numberCard/numberCard";
 import Timeline from "./components/timeline/timeline";
 import NewsHeader from "./components/newsHeader/newsHeader";
 
-function App() {
+const App = () => {
+  const [country, setCountry] = useState("german");
+
   return (
     <div className="App">
       <div className="dashboardWrapper">
         <div className="stats">
-          <Header headline="Covid-19 Dashboard" />
-          <ProgressCard />
+          <Header headline="Covid-19 Dashboard" setCountry={setCountry} />
+          <ProgressCard country={country} />
           <Dashboard />
           <NumberCard headline="First vaccination received" amount={18687931} />
           <NumberCard headline="Second vaccination received" amount={9341739} />
@@ -33,6 +37,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
