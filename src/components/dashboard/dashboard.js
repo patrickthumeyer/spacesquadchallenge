@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./dashboard.scss";
 import Chart from "react-apexcharts";
+import CountUp from "react-countup";
 
 const Dashboard = () => {
   const [options, setOptions] = useState({
@@ -27,7 +28,8 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h1 className="dashboard__totalNumber">
-        {totalVaccinations.toLocaleString()} vaccinations
+        <CountUp end={totalVaccinations} duration={2} separator="," />{" "}
+        vaccinations
       </h1>
       <div className="dashboard__graph">
         <Chart

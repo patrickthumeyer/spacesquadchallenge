@@ -3,7 +3,7 @@
 .dashboard {
   background-color: $blue300;
   border-radius: 10px;
-  max-height: 350px;
+  max-height: 380px;
   width: 100%;
   grid-column: span 2;
 
@@ -15,5 +15,6 @@
 @media (min-width: 800px) {
   .dashboard {
     grid-column: span 3;
+    max-height: 350px;
   }
 }
