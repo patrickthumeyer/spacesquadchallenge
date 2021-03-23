@@ -2,7 +2,7 @@
 
 ---
 
-####This is a corona dashboard. Its features include a news section, a timeline with some important milestone events and a dashboard about the current status of corona vaccinations.
+This is a corona dashboard. Its features include a news section, a timeline with some important milestone events and a dashboard about the current status of corona vaccinations.
 
 It has a fully responsive mobile first design and the SCSS written with the BEM naming convention.
 The data used on the board is all dummy data.
