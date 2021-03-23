@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./dashboard.scss";
+import "./Dashboard.scss";
 import Chart from "react-apexcharts";
 import CountUp from "react-countup";
 

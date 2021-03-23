@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import "./App.scss";
 import "./normalize.scss";
-import Header from "./components/header/header";
-import NewsCard from "./components/newsCard/newsCard";
-import ProgressCard from "./components/progressCard/progressCard";
-import Dashboard from "./components/dashboard/dashboard";
-import NumberCard from "./components/numberCard/numberCard";
-import Timeline from "./components/timeline/timeline";
-import NewsHeader from "./components/newsHeader/newsHeader";
+import Header from "./components/Header/Header";
+import NewsCard from "./components/NewsCard/NewsCard";
+import ProgressCard from "./components/ProgressCard/ProgressCard";
+import Dashboard from "./components/Dashboard/Dashboard";
+import NumberCard from "./components/NumberCard/NumberCard";
+import Timeline from "./components/Timeline/Timeline";
+import NewsHeader from "./components/NewsHeader/NewsHeader";
 
 const App = () => {
   const [country, setCountry] = useState("german");

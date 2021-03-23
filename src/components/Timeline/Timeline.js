@@ -1,5 +1,5 @@
 import React from "react";
-import "./timeline.scss";
+import "./Timeline.scss";
 import {
   VerticalTimeline,
   VerticalTimelineElement,

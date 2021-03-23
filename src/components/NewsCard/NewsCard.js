@@ -1,11 +1,11 @@
 import React from "react";
-import "./newsCard.scss";
+import "./NewsCard.scss";
 import coronaImage from "../../assets/images/corona-virus.jpg";
 
 const NewsCard = () => {
   return (
     <div className="newsCard">
-      <img className="newsCard__image" src={coronaImage} alt="covid" />
+      <img className="newsCard__image" src={coronaImage} alt="coronavirus" />
       <div className="newsCard__info">
         <h1 className="newsCard__info__headline">Breaking Corona News</h1>
         <p className="newsCard__info__text">

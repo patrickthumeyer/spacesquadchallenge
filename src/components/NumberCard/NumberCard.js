@@ -1,5 +1,5 @@
 import React from "react";
-import "./numberCard.scss";
+import "./NumberCard.scss";
 import CountUp from "react-countup";
 
 const NumberCard = ({ amount, headline }) => {

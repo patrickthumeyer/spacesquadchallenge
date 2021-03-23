@@ -1,5 +1,5 @@
 import React from "react";
-import "./progressCard.scss";
+import "./ProgressCard.scss";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
