@@ -10,6 +10,6 @@ The data used on the board is all dummy data.
 Design Inspiration:
 
 - https://lightroom.adobe.com/shares/bf99b7b1455748fe8546886dc9131f8a/albums/99edc6d9dd764378879c5ae2a3a61bc0/assets/f925f4eadeae813a67f9450b3ed6d6c2
-- https://lightroom.adobe.com/shares/bf99b7b1455748fe8546886dc9131f8a
+- https://lightroom.adobe.com/shares/bf99b7b1455748fe8546886dc9131f8a/albums/99edc6d9dd764378879c5ae2a3a61bc0/assets/f4218fd1d3962573b14a7e3b7014134f
 
 <img src="src/assets/images/corona_dashboard.png" width="600px"/>

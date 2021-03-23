@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Dashboard.scss";
 import Chart from "react-apexcharts";
 import CountUp from "react-countup";
 
 const Dashboard = () => {
-  const [options, setOptions] = useState({
+  const options = {
     chart: {
-      background: "rgb(80, 80, 172",
       foreColor: "#333",
       toolbar: { show: false },
     },
@@ -18,11 +17,11 @@ const Dashboard = () => {
     plotOptions: { bar: { horizontal: false } },
     fill: { colors: ["#430000"] },
     dataLabels: { enabled: false },
-  });
+  };
 
-  const [series, setSeries] = useState([
+  const series = [
     { name: "Vaccinations", data: [54.565, 163.445, 212.355, 234.565] },
-  ]);
+  ];
 
   const totalVaccinations = 27880432;
 
