@@ -18,7 +18,10 @@ const Timeline = () => {
           contentArrowStyle={{ borderRight: "7px solid  rgb(152, 152, 236)" }}
           date="February 27, 2021"
           dateClassName={"timeline__headline__date"}
-          iconStyle={{ background: "rgb(24, 24, 94)", color: "#fff" }}
+          iconStyle={{
+            background: "rgb(24, 24, 94)",
+            color: "#fff",
+          }}
           icon={<CoronaSVG />}
         >
           <h3 className="vertical-timeline-element-title">CNN</h3>

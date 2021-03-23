@@ -5,8 +5,9 @@
   &__headline {
     color: $blue600;
     text-align: left;
+    margin: 0 0 20px;
     &__date {
-      color: $blue600;
+      color: $blue100;
       font-size: 18px;
     }
   }
@@ -25,6 +26,10 @@
   .timeline {
     &__headline {
       text-align: center;
+      &__date {
+        margin: 5px 10px;
+        color: $blue600;
+      }
     }
   }
 }

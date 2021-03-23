@@ -33,9 +33,17 @@
   padding: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .App {
     flex-direction: column;
+  }
+
+  .stats {
+    width: 100%;
+    grid-auto-rows: 60px 350px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    grid-column: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -47,22 +55,6 @@
   .dashboardWrapper {
     overflow-y: scroll;
     height: 100vh;
-  }
-
-  .stats {
-    width: 100%;
-    grid-auto-rows: 60px 350px 100px;
-    grid-template-columns: repeat(4, 1fr);
-
-    &__firstWrapper {
-      width: 100%;
-      grid-column: 1fr 1fr 1fr 1fr;
-    }
-
-    &__secondWrapper {
-      width: 100%;
-      grid-column: 1fr 1fr 1fr 1fr;
-    }
   }
 
   .news {

@@ -3,9 +3,7 @@ import "./progressCard.scss";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const percentage = 34.2;
-
-const ProgressCard = ({ country }) => {
+const ProgressCard = ({ country, percentage }) => {
   return (
     <div className="progressCard">
       <CircularProgressbar

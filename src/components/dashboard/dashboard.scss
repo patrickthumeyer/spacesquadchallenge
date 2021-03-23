@@ -12,18 +12,13 @@
   &::after {
     display: block;
     content: url("../../assets/svgs/corona.svg");
-    // background-image: url("../../assets/svgs/corona.svg");
-    // transform: rotate(270deg);
-    // background-image: url("../../assets/images/corona-virus.jpg");
     top: -60px;
     right: -30px;
     position: absolute;
-    z-index: 100;
   }
 
   &__totalNumber {
     margin-left: 20px;
-    // position: absolute;
     z-index: 200;
   }
 }
@@ -34,7 +29,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .dashboard {
     grid-column: span 3;
     max-height: 350px;

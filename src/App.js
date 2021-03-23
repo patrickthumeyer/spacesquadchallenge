@@ -18,7 +18,7 @@ const App = () => {
       <div className="dashboardWrapper">
         <div className="stats">
           <Header headline="Covid-19 Dashboard" setCountry={setCountry} />
-          <ProgressCard country={country} />
+          <ProgressCard country={country} percentage={34.2} />
           <Dashboard />
           <NumberCard headline="First vaccination received" amount={18687931} />
           <NumberCard headline="Second vaccination received" amount={9341739} />

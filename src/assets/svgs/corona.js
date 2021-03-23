@@ -3,7 +3,6 @@ import * as React from "react";
 const CoronaSVG = () => (
   <svg
     id="Capa_1"
-    enable-background="new 0 0 495.974 495.974"
     height="512"
     viewBox="0 0 495.974 495.974"
     width="512"

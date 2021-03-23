@@ -19,8 +19,9 @@ const Dashboard = () => {
     fill: { colors: ["#430000"] },
     dataLabels: { enabled: false },
   });
+
   const [series, setSeries] = useState([
-    { name: "Vaccinations", data: [54.565, 183.445, 222.355, 234.565] },
+    { name: "Vaccinations", data: [54.565, 163.445, 212.355, 234.565] },
   ]);
 
   const totalVaccinations = 27880432;
@@ -28,7 +29,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h1 className="dashboard__totalNumber">
-        <CountUp end={totalVaccinations} duration={2} separator="," />{" "}
+        <CountUp end={totalVaccinations} duration={1.5} separator="," />{" "}
         vaccinations
       </h1>
       <div className="dashboard__graph">
